@@ -2,13 +2,11 @@ use bytes::BytesMut;
 use futures::{SinkExt, StreamExt};
 use std::{
     error::Error,
-    fmt::Display,
-    fmt::{self, Write},
+    fmt::{self, Display, Write},
     io::ErrorKind,
     net::SocketAddr,
 };
 use tokio::{
-    self,
     io::{self, AsyncReadExt, AsyncWriteExt, ReadHalf, WriteHalf},
     net::{TcpListener, TcpStream},
 };
